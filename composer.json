@@ -1,0 +1,29 @@
+{
+  "name": "fond-of-spryker/customer-b2b",
+  "type": "library",
+  "description": "FondOf B2b Customer module",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1",
+    "spryker/customer": "^7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Spryker\\": "src/Spryker/"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "FondOfSpryker\\": "src/FondOfSpryker/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FondOfSpryker\\": "tests/FondOfSpryker/"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  }
+}
