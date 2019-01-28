@@ -9,21 +9,17 @@
   },
   "autoload": {
     "psr-4": {
-      "Spryker\\": "src/Spryker/"
-    }
-  },
-  "autoload": {
-    "psr-4": {
       "FondOfSpryker\\": "src/FondOfSpryker/"
     }
   },
   "autoload-dev": {
     "psr-4": {
       "FondOfSpryker\\": "tests/FondOfSpryker/"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "config": {
-    "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+      "sort-packages": true
+    }
   }
 }
