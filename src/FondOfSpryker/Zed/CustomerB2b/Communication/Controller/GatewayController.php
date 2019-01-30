@@ -7,8 +7,8 @@ use Generated\Shared\Transfer\CustomerTransfer;
 use Spryker\Zed\Customer\Communication\Controller\GatewayController as SprykerGatewayController;
 
 /**
- * @method \FondOfSpryker\Zed\CustomerB2b\Business\CustomerFacadeInterface getFacade()
- * @method \FondOfSpryker\Zed\CustomerB2b\Communication\CustomerCommunicationFactory getFactory()
+ * @method \FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2bFacadeInterface getFacade()
+ * @method \FondOfSpryker\Zed\CustomerB2b\Communication\CustomerB2bCommunicationFactory getFactory()
  */
 class GatewayController extends SprykerGatewayController
 {

@@ -5,7 +5,7 @@ namespace FondOfSpryker\Zed\CustomerB2b\Persistence;
 use Generated\Shared\Transfer\CustomerTransfer;
 use Spryker\Zed\Customer\Persistence\CustomerRepositoryInterface as SprykerCustomerRepositoryInterface;
 
-interface CustomerRepositoryInterface extends SprykerCustomerRepositoryInterface
+interface CustomerB2bRepositoryInterface extends SprykerCustomerRepositoryInterface
 {
     /**
      * @param string $customerExternalReference

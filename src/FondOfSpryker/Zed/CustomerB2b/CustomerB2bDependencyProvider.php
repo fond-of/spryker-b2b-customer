@@ -7,7 +7,7 @@ use Pyz\Zed\Customer\CustomerDependencyProvider as PyzCustomerDependencyProvider
 /**
  * @method \Spryker\Zed\Customer\CustomerConfig getConfig()
  */
-class CustomerDependencyProvider extends PyzCustomerDependencyProvider
+class CustomerB2bDependencyProvider extends PyzCustomerDependencyProvider
 {
 
 }

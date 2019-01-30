@@ -7,9 +7,9 @@ use Generated\Shared\Transfer\CustomerTransfer;
 use Spryker\Client\Customer\CustomerClient as SprykerCustomerClient;
 
 /**
- * @method \FondOfSpryker\Client\CustomerB2b\CustomerFactory getFactory()
+ * @method \FondOfSpryker\Client\CustomerB2b\CustomerB2bFactory getFactory()
  */
-class CustomerClient extends SprykerCustomerClient implements CustomerClientInterface
+class CustomerB2bClient extends SprykerCustomerClient implements CustomerB2bClientInterface
 {
     /**
      * @param \Generated\Shared\Transfer\CustomerTransfer $customerTransfer

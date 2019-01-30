@@ -6,7 +6,7 @@ use Generated\Shared\Transfer\CustomerResponseTransfer;
 use Generated\Shared\Transfer\CustomerTransfer;
 use Spryker\Client\Customer\Zed\CustomerStub as SprykerCustomerStub;
 
-class CustomerStub extends SprykerCustomerStub implements CustomerStubInterface
+class CustomerB2bStub extends SprykerCustomerStub implements CustomerB2bStubInterface
 {
     /**
      * @param \Generated\Shared\Transfer\CustomerTransfer $customerTransfer

@@ -6,10 +6,10 @@ use Generated\Shared\Transfer\CustomerResponseTransfer;
 use Spryker\Zed\Customer\Business\CustomerFacade as SprykerCustomerFacade;
 
 /**
- * @method \FondOfSpryker\Zed\CustomerB2b\Business\CustomerBusinessFactory getFactory()
- * @method \FondOfSpryker\Zed\CustomerB2b\Persistence\CustomerRepositoryInterface getRepository()
+ * @method \FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2bBusinessFactory getFactory()
+ * @method \FondOfSpryker\Zed\CustomerB2b\Persistence\CustomerB2bRepositoryInterface getRepository()
  */
-class CustomerFacade extends SprykerCustomerFacade implements CustomerFacadeInterface
+class CustomerB2bFacade extends SprykerCustomerFacade implements CustomerB2bFacadeInterface
 {
     /**
      * {@inheritdoc}

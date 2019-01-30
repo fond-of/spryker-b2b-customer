@@ -8,7 +8,7 @@ use Spryker\Zed\Customer\Persistence\CustomerRepository as SprykerCustomerReposi
 /**
  * @method \Spryker\Zed\Customer\Persistence\CustomerPersistenceFactory getFactory()
  */
-class CustomerRepository extends SprykerCustomerRepository implements CustomerRepositoryInterface
+class CustomerB2bRepository extends SprykerCustomerRepository implements CustomerB2bRepositoryInterface
 {
     /**
      * @param string $customerExternalReference

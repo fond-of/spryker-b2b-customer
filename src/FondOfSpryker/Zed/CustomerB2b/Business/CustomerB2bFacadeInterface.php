@@ -1,13 +1,15 @@
 <?php
 
-namespace FondOfSpryker\Zed\CustomerB2b\Business\Customer;
+namespace FondOfSpryker\Zed\CustomerB2b\Business;
 
 use Generated\Shared\Transfer\CustomerResponseTransfer;
-use Spryker\Zed\Customer\Business\Customer\CustomerReaderInterface as SprykerCustomerReaderInterface;
+use Spryker\Zed\Customer\Business\CustomerFacadeInterface as SprykerCustomerFacadeInterface;
 
-interface CustomerReaderInterface extends SprykerCustomerReaderInterface
+interface CustomerB2bFacadeInterface extends SprykerCustomerFacadeInterface
 {
     /**
+     * @api
+     *
      * @param string $customerExternalReference
      *
      * @return \Generated\Shared\Transfer\CustomerResponseTransfer

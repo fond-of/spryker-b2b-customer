@@ -6,7 +6,7 @@ use Generated\Shared\Transfer\CustomerResponseTransfer;
 use Generated\Shared\Transfer\CustomerTransfer;
 use Spryker\Client\Customer\CustomerClientInterface as SprykerCustomerClientInterface;
 
-interface CustomerClientInterface extends SprykerCustomerClientInterface
+interface CustomerB2bClientInterface extends SprykerCustomerClientInterface
 {
     /**
      * @param \Generated\Shared\Transfer\CustomerTransfer $customerTransfer
