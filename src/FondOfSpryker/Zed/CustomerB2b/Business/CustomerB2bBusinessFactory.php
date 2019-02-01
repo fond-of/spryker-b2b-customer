@@ -9,11 +9,13 @@ use Spryker\Zed\Customer\Business\CustomerBusinessFactory as SprykerCustomerBusi
 /**
  * @method \FondOfSpryker\Zed\CustomerB2b\CustomerB2bConfig getConfig()
  * @method \FondOfSpryker\Zed\CustomerB2b\Persistence\CustomerB2bRepositoryInterface getRepository()
+ * @method \FondOfSpryker\Zed\CustomerB2b\Persistence\CustomerB2bEntityManagerInterface getEntityManager()
+ * @method \FondOfSpryker\Zed\CustomerB2b\Persistence\CustomerQueryContainerInterface getQueryContainer()
  */
 class CustomerB2bBusinessFactory extends SprykerCustomerBusinessFactory
 {
     /**
-     * @return \Spryker\Zed\Customer\Business\Customer\CustomerReaderInterface
+     * @return \FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2b\CustomerB2bReaderInterface
      */
     public function createFondOfCustomerReader(): CustomerB2bReaderInterface
     {

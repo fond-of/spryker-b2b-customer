@@ -2,8 +2,8 @@
 
 namespace FondOfSpryker\Zed\CustomerB2b;
 
-use Pyz\Zed\Customer\CustomerConfig as PyzCustomerConfig;
+use Spryker\Zed\Customer\CustomerConfig as SprykerCustomerConfig;
 
-class CustomerB2bConfig extends PyzCustomerConfig
+class CustomerB2bConfig extends SprykerCustomerConfig
 {
 }
