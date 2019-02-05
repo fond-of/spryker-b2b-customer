@@ -10,7 +10,7 @@ use Spryker\Zed\Customer\Business\CustomerBusinessFactory as SprykerCustomerBusi
  * @method \FondOfSpryker\Zed\CustomerB2b\CustomerB2bConfig getConfig()
  * @method \FondOfSpryker\Zed\CustomerB2b\Persistence\CustomerB2bRepositoryInterface getRepository()
  * @method \FondOfSpryker\Zed\CustomerB2b\Persistence\CustomerB2bEntityManagerInterface getEntityManager()
- * @method \FondOfSpryker\Zed\CustomerB2b\Persistence\CustomerQueryContainerInterface getQueryContainer()
+ * @method \FondOfSpryker\Zed\CustomerB2b\Persistence\CustomerB2bQueryContainerInterface getQueryContainer()
  */
 class CustomerB2bBusinessFactory extends SprykerCustomerBusinessFactory
 {
