@@ -16,7 +16,7 @@ class CustomerB2bStub extends SprykerCustomerStub implements CustomerB2bStubInte
     public function findCustomerByExternalReference(CustomerTransfer $customerTransfer): CustomerResponseTransfer
     {
         /** @var \Generated\Shared\Transfer\CustomerResponseTransfer $customerResponseTransfer */
-        $customerResponseTransfer = $this->zedStub->call('/customer/gateway/find-customer-by-external-reference', $customerTransfer);
+        $customerResponseTransfer = $this->zedStub->call('/customer-b2b/gateway/find-customer-by-external-reference', $customerTransfer);
 
         return $customerResponseTransfer;
     }
