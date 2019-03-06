@@ -2,7 +2,7 @@
 
 namespace FondOfSpryker\Zed\CustomerB2b\Business;
 
-use FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2b\CustomerB2BReader;
+use FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2b\CustomerB2bReader;
 use FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2b\CustomerB2bReaderInterface;
 use Spryker\Zed\Customer\Business\CustomerBusinessFactory as SprykerCustomerBusinessFactory;
 
@@ -19,7 +19,7 @@ class CustomerB2bBusinessFactory extends SprykerCustomerBusinessFactory
      */
     public function createFondOfCustomerReader(): CustomerB2bReaderInterface
     {
-        return new CustomerB2BReader(
+        return new CustomerB2bReader(
             $this->getEntityManager(),
             $this->getRepository(),
             $this->createAddress()

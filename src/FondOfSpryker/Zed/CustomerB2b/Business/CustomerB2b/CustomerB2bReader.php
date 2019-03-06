@@ -17,7 +17,7 @@ class CustomerB2bReader extends SprykerCustomerReader implements CustomerB2bRead
 
     /**
      * @param \Spryker\Zed\Customer\Persistence\CustomerEntityManagerInterface $customerEntityManager
-     * @param \FondOfSpryker\Zed\CustomerB2B\Persistence\CustomerB2bRepositoryInterface $customerRepository
+     * @param \FondOfSpryker\Zed\CustomerB2b\Persistence\CustomerB2bRepositoryInterface $customerRepository
      * @param \Spryker\Zed\Customer\Business\Customer\AddressInterface $addressManager
      */
     public function __construct(
