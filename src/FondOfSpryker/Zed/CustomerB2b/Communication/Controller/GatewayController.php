@@ -21,4 +21,14 @@ class GatewayController extends SprykerGatewayController
     {
         return $this->getFacade()->findCustomerByExternalReference($customerTransfer->getExternalReference());
     }
+
+    /**
+     * @param \Generated\Shared\Transfer\CustomerTransfer $customerTransfer
+     *
+     * @return \Generated\Shared\Transfer\CustomerResponseTransfer
+     */
+    public function findCustomerByReferenceAction(CustomerTransfer $customerTransfer): CustomerResponseTransfer
+    {
+        return $this->getFacade()->findCustomerByReference($customerTransfer->getCustomerReference());
+    }
 }

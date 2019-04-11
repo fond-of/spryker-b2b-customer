@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2b;
 
 use Generated\Shared\Transfer\CustomerResponseTransfer;
