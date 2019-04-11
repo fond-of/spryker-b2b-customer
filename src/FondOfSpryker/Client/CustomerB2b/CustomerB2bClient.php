@@ -22,4 +22,20 @@ class CustomerB2bClient extends SprykerCustomerClient implements CustomerB2bClie
             ->createZedCustomerStub()
             ->findCustomerByExternalReference($customerTransfer);
     }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @api
+     *
+     * @param \Generated\Shared\Transfer\CustomerTransfer $customerTransfer
+     *
+     * @return \Generated\Shared\Transfer\CustomerResponseTransfer
+     */
+    public function findCustomerByReference(CustomerTransfer $customerTransfer): CustomerResponseTransfer
+    {
+        return $this->getFactory()
+            ->createZedCustomerStub()
+            ->findCustomerByReference($customerTransfer);
+    }
 }

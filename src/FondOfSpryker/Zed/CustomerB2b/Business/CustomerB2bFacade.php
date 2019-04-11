@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace FondOfSpryker\Zed\CustomerB2b\Business;
 
 use Generated\Shared\Transfer\CustomerResponseTransfer;
@@ -25,5 +27,17 @@ class CustomerB2bFacade extends SprykerCustomerFacade implements CustomerB2bFaca
         return $this->getFactory()
             ->createFondOfCustomerReader()
             ->findCustomerByExternalReference($customerExternalReference);
+    }
+
+    /**
+     * @param string $customerReference
+     *
+     * @return \Generated\Shared\Transfer\CustomerResponseTransfer
+     */
+    public function findCustomerByReference(string $customerReference): CustomerResponseTransfer
+    {
+        return $this->getFactory()
+            ->createFondOfCustomerReader()
+            ->findCustomerByReference($customerReference);
     }
 }

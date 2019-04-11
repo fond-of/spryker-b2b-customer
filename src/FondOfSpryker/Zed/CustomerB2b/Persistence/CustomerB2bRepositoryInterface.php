@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace FondOfSpryker\Zed\CustomerB2b\Persistence;
 
 use Generated\Shared\Transfer\CustomerTransfer;
