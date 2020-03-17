@@ -10,12 +10,14 @@ use Spryker\Zed\Kernel\Communication\AbstractPlugin;
 
 /**
  * @method \FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2bFacade getFacade()
- * @method \FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2bBusinessFactory getFactory()
+ * @method \FondOfSpryker\Zed\CustomerB2b\Communication\CustomerB2bCommunicationFactory getFactory()
  */
 class CustomerB2bLocaleHydrationPlugin extends AbstractPlugin implements CustomerB2bHydrationPluginInterface
 {
     /**
-     * @param \Generated\Shared\Transfer\CustomerTransfer CustomerTransfer
+     * @param \Generated\Shared\Transfer\CustomerTransfer $customerTransfer
+     *
+     * @throws
      *
      * @return \Generated\Shared\Transfer\CustomerTransfer
      */
