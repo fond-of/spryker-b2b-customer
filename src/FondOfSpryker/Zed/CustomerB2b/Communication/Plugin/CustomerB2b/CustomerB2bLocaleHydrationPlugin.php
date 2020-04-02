@@ -17,8 +17,6 @@ class CustomerB2bLocaleHydrationPlugin extends AbstractPlugin implements Custome
     /**
      * @param \Generated\Shared\Transfer\CustomerTransfer $customerTransfer
      *
-     * @throws
-     *
      * @return \Generated\Shared\Transfer\CustomerTransfer
      */
     public function hydrate(CustomerTransfer $customerTransfer): CustomerTransfer

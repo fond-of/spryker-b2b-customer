@@ -9,7 +9,6 @@ use Spryker\Client\Customer\CustomerFactory as SprykerCustomerFactory;
 class CustomerB2bFactory extends SprykerCustomerFactory
 {
     /**
-     * @throws
      * @return \FondOfSpryker\Client\CustomerB2b\Zed\CustomerB2bStubInterface
      */
     public function createZedCustomerStub(): CustomerB2bStubInterface

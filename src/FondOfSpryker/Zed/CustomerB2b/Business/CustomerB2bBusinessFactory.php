@@ -44,8 +44,6 @@ class CustomerB2bBusinessFactory extends SprykerCustomerBusinessFactory
     }
 
     /**
-     * @throws
-     *
      * @return \FondOfSpryker\Zed\CustomerB2b\Dependency\Plugin\CustomerB2bHydrationPluginInterface[]
      */
     protected function getCustomerB2bHydrationPlugins(): array
@@ -54,8 +52,6 @@ class CustomerB2bBusinessFactory extends SprykerCustomerBusinessFactory
     }
 
     /**
-     * @throws
-     *
      * @return \Spryker\Zed\Locale\Business\LocaleFacadeInterface
      */
     public function getOriginalLocaleFacade(): LocaleFacadeInterface

@@ -17,8 +17,6 @@ use Spryker\Zed\Locale\Business\LocaleFacadeInterface;
 class CustomerB2bCommunicationFactory extends SprykerCustomerCommunicationFactory
 {
     /**
-     * @throws
-     *
      * @return \Spryker\Zed\Locale\Business\LocaleFacadeInterface
      */
     public function getOriginalLocaleFacade(): LocaleFacadeInterface
