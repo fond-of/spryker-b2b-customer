@@ -4,13 +4,13 @@ declare(strict_types = 1);
 
 namespace FondOfSpryker\Zed\CustomerB2b\Business;
 
+use FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2b\CustomerB2bPluginExecutor;
 use FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2b\CustomerB2bPluginExecutorInterface;
 use FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2b\CustomerB2bReader;
 use FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2b\CustomerB2bReaderInterface;
 use FondOfSpryker\Zed\CustomerB2b\CustomerB2bDependencyProvider;
 use Spryker\Zed\Customer\Business\CustomerBusinessFactory as SprykerCustomerBusinessFactory;
 use Spryker\Zed\Locale\Business\LocaleFacadeInterface;
-use FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2b\CustomerB2bPluginExecutor;
 
 /**
  * @method \FondOfSpryker\Zed\CustomerB2b\CustomerB2bConfig getConfig()

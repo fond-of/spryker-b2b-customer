@@ -12,6 +12,7 @@ use Spryker\Zed\Locale\Business\LocaleFacadeInterface;
  * @method \FondOfSpryker\Zed\CustomerB2b\CustomerB2bConfig getConfig()
  * @method \FondOfSpryker\Zed\CustomerB2b\Persistence\CustomerB2bRepositoryInterface getRepository()
  * @method \FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2bFacadeInterface getFacade()
+ * @method \FondOfSpryker\Zed\CustomerB2b\Persistence\CustomerB2bQueryContainer getQueryContainer()
  */
 class CustomerB2bCommunicationFactory extends SprykerCustomerCommunicationFactory
 {
