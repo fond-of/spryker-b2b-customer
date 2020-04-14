@@ -6,6 +6,7 @@ use Codeception\Test\Unit;
 use FondOfSpryker\Zed\CustomerB2b\Communication\CustomerB2bCommunicationFactory;
 use Generated\Shared\Transfer\CustomerTransfer;
 use Generated\Shared\Transfer\LocaleTransfer;
+use Spryker\Zed\Kernel\Communication\AbstractCommunicationFactory;
 use Spryker\Zed\Locale\Business\LocaleFacadeInterface;
 
 class CustomerB2bLocaleHydrationPluginTest extends Unit
@@ -63,8 +64,30 @@ class CustomerB2bLocaleHydrationPluginTest extends Unit
             ->disableOriginalConstructor()
             ->getMock();
 
-        $this->customerB2bLocaleHydrationPlugin = new CustomerB2bLocaleHydrationPlugin();
-        $this->customerB2bLocaleHydrationPlugin->setFactory($this->customerB2bCommunicationFactoryMock);
+        $this->customerB2bLocaleHydrationPlugin = new class (
+            $this->customerB2bCommunicationFactoryMock
+        ) extends CustomerB2bLocaleHydrationPlugin {
+            /**
+             * @var \FondOfSpryker\Zed\CustomerB2b\Communication\CustomerB2bCommunicationFactory
+             */
+            protected $customerB2bCommunicationFactory;
+
+            /**
+             * @param \FondOfSpryker\Zed\CustomerB2b\Communication\CustomerB2bCommunicationFactory $customerB2bCommunicationFactory
+             */
+            public function __construct(CustomerB2bCommunicationFactory $customerB2bCommunicationFactory)
+            {
+                $this->customerB2bCommunicationFactory = $customerB2bCommunicationFactory;
+            }
+
+            /**
+             * @return \Spryker\Zed\Kernel\Communication\AbstractCommunicationFactory
+             */
+            public function getFactory(): AbstractCommunicationFactory
+            {
+                return $this->customerB2bCommunicationFactory;
+            }
+        };
     }
 
     /**
