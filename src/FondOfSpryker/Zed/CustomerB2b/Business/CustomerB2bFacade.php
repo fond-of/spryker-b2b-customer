@@ -14,7 +14,7 @@ use Spryker\Zed\Customer\Business\CustomerFacade as SprykerCustomerFacade;
 class CustomerB2bFacade extends SprykerCustomerFacade implements CustomerB2bFacadeInterface
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @api
      *

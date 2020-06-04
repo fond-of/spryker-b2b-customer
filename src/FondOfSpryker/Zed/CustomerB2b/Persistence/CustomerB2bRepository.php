@@ -21,7 +21,6 @@ class CustomerB2bRepository extends SprykerCustomerRepository implements Custome
     {
         $customerEntity = $this->getFactory()->createSpyCustomerQuery()->findOneByExternalReference($customerExternalReference);
 
-
         if ($customerEntity === null) {
             return null;
         }

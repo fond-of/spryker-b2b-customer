@@ -24,7 +24,7 @@ class CustomerB2bClient extends SprykerCustomerClient implements CustomerB2bClie
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @api
      *

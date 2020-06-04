@@ -11,6 +11,8 @@ use Spryker\Zed\Kernel\Communication\AbstractPlugin;
 /**
  * @method \FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2bFacade getFacade()
  * @method \FondOfSpryker\Zed\CustomerB2b\Communication\CustomerB2bCommunicationFactory getFactory()
+ * @method \FondOfSpryker\Zed\CustomerB2b\CustomerB2bConfig getConfig()
+ * @method \FondOfSpryker\Zed\CustomerB2b\Persistence\CustomerB2bQueryContainerInterface getQueryContainer()
  */
 class CustomerB2bLocaleHydrationPlugin extends AbstractPlugin implements CustomerB2bHydrationPluginInterface
 {
