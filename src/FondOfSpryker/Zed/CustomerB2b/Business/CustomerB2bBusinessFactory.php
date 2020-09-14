@@ -29,6 +29,7 @@ class CustomerB2bBusinessFactory extends SprykerCustomerBusinessFactory
             $this->getEntityManager(),
             $this->getRepository(),
             $this->createAddress(),
+            $this->createCustomerExpander(),
             $this->createCustomerB2bPluginExecutor()
         );
     }
