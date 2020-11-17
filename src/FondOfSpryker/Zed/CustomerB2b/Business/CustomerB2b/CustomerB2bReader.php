@@ -9,6 +9,7 @@ use Generated\Shared\Transfer\CustomerResponseTransfer;
 use Generated\Shared\Transfer\CustomerTransfer;
 use Spryker\Zed\Customer\Business\Customer\AddressInterface;
 use Spryker\Zed\Customer\Business\Customer\CustomerReader as SprykerCustomerReader;
+use Spryker\Zed\Customer\Business\CustomerExpander\CustomerExpanderInterface;
 use Spryker\Zed\Customer\Persistence\CustomerEntityManagerInterface;
 
 class CustomerB2bReader extends SprykerCustomerReader implements CustomerB2bReaderInterface
@@ -27,15 +28,17 @@ class CustomerB2bReader extends SprykerCustomerReader implements CustomerB2bRead
      * @param \Spryker\Zed\Customer\Persistence\CustomerEntityManagerInterface $customerEntityManager
      * @param \FondOfSpryker\Zed\CustomerB2b\Persistence\CustomerB2bRepositoryInterface $customerRepository
      * @param \Spryker\Zed\Customer\Business\Customer\AddressInterface $addressManager
+     * @param \Spryker\Zed\Customer\Business\CustomerExpander\CustomerExpanderInterface $customerExpander
      * @param \FondOfSpryker\Zed\CustomerB2b\Business\CustomerB2b\CustomerB2bPluginExecutorInterface $customerB2bPluginExecutor
      */
     public function __construct(
         CustomerEntityManagerInterface $customerEntityManager,
         CustomerB2bRepositoryInterface $customerRepository,
         AddressInterface $addressManager,
+        CustomerExpanderInterface $customerExpander,
         CustomerB2bPluginExecutorInterface $customerB2bPluginExecutor
     ) {
-        parent::__construct($customerEntityManager, $customerRepository, $addressManager);
+        parent::__construct($customerEntityManager, $customerRepository, $addressManager, $customerExpander);
         $this->customerRepository = $customerRepository;
         $this->customerB2bPluginExecutor = $customerB2bPluginExecutor;
     }

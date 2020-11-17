@@ -5,7 +5,7 @@
   "license": "MIT",
   "require": {
     "php": ">=7.1",
-    "spryker/customer": "^7.0.0",
+    "spryker/customer": "^7.33.0",
     "spryker/customer-group": "^2.0.0"
   },
   "require-dev": {
